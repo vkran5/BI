@@ -195,7 +195,7 @@ const Detail = () => {
   return (
     <div className="flex w-full p-5 overflow-x-hidden">
       <div className="mx-auto w-[1280px] justify-center flex flex-col">
-        <p className="text-[20px] font-semibold">
+        <p className="text-[2px] font-semibold">
           Daftar Persetujuan Penyedia Jasa Pembayaran (PJP)
         </p>
 
@@ -328,7 +328,7 @@ const Detail = () => {
               <Input
                 placeholder="Catatan pengajuan"
                 size="lg"
-                className="h-[300pxx]"
+                className="h-[300px]"
                 value={notes}
                 onChange={(e) => {
                   setNotes(e.target.value);

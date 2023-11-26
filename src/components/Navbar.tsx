@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full  overflow-x-hidden bg-[#307FDC] flex lg:flex-col items-center">
-      <div className="lg:w-[1440px] p-4 flex justify-between">
+      <div className="lg:w-[1280px] p-4 flex justify-between">
         <div className="flex items-center gap-10">
           <p className="font-main font-bold text-white text-[18px] lg:text-[24px]">
             ELICENSE
