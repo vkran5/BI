@@ -51,15 +51,15 @@ const Dasboard = () => {
   return (
     <>
       <div className="flex w-full p-5 overflow-x-hidden">
-        <div className="mx-auto w-[1440px] justify-center flex flex-col">
+        <div className="mx-auto w-[1280px] justify-center flex flex-col">
           {/* Title */}
           <div className="mx-auto flex-col py-10">
-            <p className="text-center text-[28px] font-semibold">
+            <p className="text-center text-[20px] font-semibold ">
               Daftar Persetujuan Penyedia Jasa Pembayaran (PJP)/ Penyelenggara
               Infrastruktur Pebayaran (PIP)
             </p>
 
-            <div className="flex justify-center gap-2 mx-auto w-[1440px]">
+            <div className="flex justify-center gap-2 mx-auto w-[1280px]">
               <p className="px-[8px] py-[3px] text-white font-semibold mt-2 bg-[#015694] rounded">
                 Pemohon
               </p>

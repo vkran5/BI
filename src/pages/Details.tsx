@@ -2,7 +2,7 @@ import { FaFolderOpen, FaList, FaRegListAlt, FaSave } from "react-icons/fa";
 import { IoDocumentSharp } from "react-icons/io5";
 import { HiMiniPencilSquare } from "react-icons/hi2";
 import { Input } from "@chakra-ui/react";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Button,
   Tabs,
@@ -194,7 +194,7 @@ const Detail = () => {
 
   return (
     <div className="flex w-full p-5 overflow-x-hidden">
-      <div className="mx-auto w-[1440px] justify-center flex flex-col">
+      <div className="mx-auto w-[1280px] justify-center flex flex-col">
         <p className="text-[28px] font-semibold">
           Daftar Persetujuan Penyedia Jasa Pembayaran (PJP)
         </p>
