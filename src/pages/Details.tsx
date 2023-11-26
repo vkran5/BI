@@ -195,7 +195,7 @@ const Detail = () => {
   return (
     <div className="flex w-full p-5 overflow-x-hidden">
       <div className="mx-auto w-[1280px] justify-center flex flex-col">
-        <p className="text-[28px] font-semibold">
+        <p className="text-[20px] font-semibold">
           Daftar Persetujuan Penyedia Jasa Pembayaran (PJP)
         </p>
 
