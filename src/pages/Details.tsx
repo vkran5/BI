@@ -21,11 +21,13 @@ interface INonComplete {
 const Detail = () => {
   const [selectedIndex, setSelectedIndex] = useState(100);
   const [insertData, setInsertData] = useState("");
+  const [notes, setNotes] = useState("");
+  const [isNoteSubmitted, setIsNoteSubmitted] = useState(false);
   const [inCompleteData, setInCompletedData] = useState<INonComplete[]>([
     {
       name: "Persetujuan 2023",
       document: "Surat persetujuan dari otoritas pengawas Bank",
-      analisis: "aad",
+      analisis: "",
     },
     {
       name: "Pernyataan 2023",
@@ -232,16 +234,13 @@ const Detail = () => {
         {/* Tabs */}
         <Tabs size="md" variant="enclosed">
           <TabList>
-            <Tab>Umum</Tab>
             <Tab>Kelembagaan</Tab>
+            <Tab>Umum</Tab>
             <Tab>Pemodalan dan Keunangan</Tab>
             <Tab>Manajemen Resiko</Tab>
             <Tab>Kapabilitas Sistem Informasi</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel>
-              <p>Umum</p>
-            </TabPanel>
             <TabPanel>
               <table className="w-full table-auto pb-5">
                 <thead>
@@ -273,6 +272,9 @@ const Detail = () => {
               </table>
             </TabPanel>
             <TabPanel>
+              <p>Umum</p>
+            </TabPanel>
+            <TabPanel>
               <p>Pemodalan dan Keunangan</p>
             </TabPanel>
             <TabPanel>
@@ -284,8 +286,68 @@ const Detail = () => {
           </TabPanels>
         </Tabs>
 
-        {/* Procces */}
-        <div></div>
+        {/* Submit */}
+        <div className="w-[1300px] mx-auto">
+          {isNoteSubmitted ? (
+            <>
+              <div className="border mx-auto rounded-xl p-5 bg-slate-100">
+                <div className="flex justify-between">
+                  <div className="bg-blue-300 w-[160px] rounded-lg h-[32px] flex justify-center items-center">
+                    <p className="text-blue-700 font-semibold">
+                      Status Persetujuan :
+                    </p>
+                  </div>
+                  <p className="text-blue-700 font-semibold">
+                    26 November 2023
+                  </p>
+                </div>
+
+                <div className="py-2 flex gap-3">
+                  <div>
+                    <p>Oleh </p>
+                    <p>Catatan </p>
+                  </div>
+
+                  <div>
+                    <p>:</p>
+                    <p>:</p>
+                  </div>
+
+                  <div>
+                    <p>Yessy Indah Tri Utamxi</p>
+                    <p>{notes}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div></div>
+            </>
+          ) : (
+            <>
+              <p className="font-semibold py-3">Catatan :</p>
+              <Input
+                placeholder="Catatan pengajuan"
+                size="lg"
+                className="h-[300pxx]"
+                value={notes}
+                onChange={(e) => {
+                  setNotes(e.target.value);
+                }}
+              />
+              <div className="flex justify-end pt-5">
+                <Button
+                  colorScheme="blue"
+                  disabled={true}
+                  onClick={() => {
+                    setIsNoteSubmitted(true);
+                  }}
+                >
+                  Submit
+                </Button>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
