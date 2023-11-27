@@ -292,17 +292,15 @@ const Detail = () => {
             <>
               <div className="border mx-auto rounded-xl p-5 bg-slate-100">
                 <div className="flex justify-between">
-                  <div className="bg-blue-300 w-[160px] rounded-lg h-[32px] flex justify-center items-center">
-                    <p className="text-blue-700 font-semibold">
-                      Status Persetujuan :
-                    </p>
+                  <div className="bg-blue-300 w-[90px] border-blue-500 border rounded-lg h-[32px] flex justify-center items-center">
+                    <p className="text-blue-700  font-semibold">Status</p>
                   </div>
-                  <p className="text-blue-700 font-semibold">
+                  <p className="text-blue-700 font-semibold ">
                     26 November 2023
                   </p>
                 </div>
 
-                <div className="py-2 flex gap-3">
+                <div className="py-2 flex gap-3 pl-2">
                   <div>
                     <p>Oleh </p>
                     <p>Catatan </p>

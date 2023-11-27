@@ -55,8 +55,7 @@ const Dasboard = () => {
           {/* Title */}
           <div className="mx-auto flex-col py-10">
             <p className="text-center text-[20px] font-semibold ">
-              Daftar Persetujuan Penyedia Jasa Pembayaran (PJP)/ Penyelenggara
-              Infrastruktur Pebayaran (PIP)
+              Daftar Perizinan Penyedia Jasa Pembayaran (PJP)
             </p>
 
             <div className="flex justify-center gap-2 mx-auto w-[1280px]">
